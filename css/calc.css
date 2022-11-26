@@ -41,15 +41,12 @@
   border-bottom: 1px solid #ededed;
   margin-bottom: 40px;
 }
-
 .calc__card:last-child {
   padding-left: 20px;
 }
-
 .prise {
-  width: 250px;
-  border-bottom: none;
-  margin-bottom: 0;
+  width: 225px;
+  padding-left: 20px;
 }
 
 .price__info__list {
