@@ -117,7 +117,7 @@ function calculateTotalPrice () {
     totalPrice = (price * humanCount + childrenPrice * childrenCount) * duration;
     if (totalPrice || totalPrice == 0) {
         totalPriceOut.innerHTML = totalPrice;
-        const fullInfoData = [place, duration * 24, humanCount, childrenCount, totalPrice];
+        const fullInfoData = [place, duration, humanCount, childrenCount, totalPrice];
         fullInfo.forEach((item, index) => {
             item.getElementsByTagName('span')[0].innerHTML = fullInfoData[index]
         })
@@ -153,10 +153,10 @@ function resetCalc () {
         item.getElementsByTagName('span')[0].innerHTML = ['', '0', '', '', 0][index]
     })
 
-    price = undefined;
-    humanCount = undefined;
-    childrenPrice = undefined;
-    childrenCount = undefined;
-    duration = undefined;
-    place = undefined
+    price = '';
+    humanCount = 0;
+    childrenPrice = '';
+    childrenCount = 0;
+    duration = '0';
+    place = ''
 }
