@@ -1,0 +1,239 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.box-center {
+  display: flex;
+  justify-content: center;
+}
+.calc__content {
+  max-width: 600px;
+  padding: 25px 10px;
+  background-color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  border: 1px solid #ededed;
+}
+
+.calc__title {
+  font-weight: 800;
+  color: #0499dd;
+  padding-bottom: 35px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Calc Crads */
+
+.calc__cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.calc__card {
+  width: 250px;
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 40px;
+}
+
+.calc__card:last-child {
+  padding-left: 20px;
+}
+
+.prise {
+  width: 250px;
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.price__info__list {
+  font-size: 12px;
+  list-style: url(../img/calc/list-item.svg);
+  margin-bottom: 10px;
+  max-width: 225px;
+}
+
+.calc__card__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.calc__card__title button {
+  display: flex;
+  align-items: center;
+  height: 16px;
+}
+
+.cheakbox__item__btn input[type="radio"] {
+  display: none;
+}
+
+.cheakbox__item__btn label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 0;
+  line-height: 18px;
+  user-select: none;
+}
+
+.cheakbox__item__btn label::before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background: url(../img/calc/radio-off.svg) 0 0 no-repeat;
+}
+
+.cheakbox__item__btn input[type="radio"]:checked + label:before {
+  background: url(../img/calc/radio-on.svg) 0 0 no-repeat;
+}
+
+.calc__card__chekbox {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.calc__card__human__count {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 7px;
+  font-weight: 500;
+  font-size: 12px;
+  padding-bottom: 35px;
+}
+
+.human__count__btn__radio input[type="radio"] {
+  display: none;
+}
+
+.human__count__btn__radio label {
+  border: 1px solid #ededed;
+  /* padding: 7px 20px; */
+  width: 73px;
+  /* height: 30px; */
+  border-radius: 40px;
+  display: inline-block;
+  max-width: 73px;
+  text-align: center;
+  padding: 7px 0;
+}
+
+.human__count__btn__radio11 input[type="radio"] {
+  display: none;
+}
+
+.human__count__btn__radio11 label {
+  border: 1px solid #ededed;
+  /* padding: 7px 20px; */
+  width: 149px;
+  /* height: 30px; */
+  border-radius: 40px;
+  display: inline-block;
+  /* max-width: 73px; */
+  text-align: center;
+  padding: 7px 0;
+}
+
+.human__count__btn__radio input[type="radio"]:checked + label {
+  background: #0499dd;
+  color: #ffffff;
+}
+
+.human__count__btn__radio11 input[type="radio"]:checked + label {
+  background: #0499dd;
+  color: #ffffff;
+}
+
+.inputCount {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 12px;
+  max-width: 100px;
+  margin-right: 5px;
+  border: 1px solid #ededed;
+  border-radius: 40px;
+}
+
+.calc__card__total__price {
+  max-height: 105px;
+}
+
+.total__price {
+  font-size: 12px;
+  font-weight: 500;
+  width: 113px;
+  border: 1px solid #ededed;
+  border-radius: 40px;
+  margin-bottom: 35px;
+}
+
+.total__price p {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 17px;
+}
+
+.full__information {
+  margin-bottom: 35px;
+}
+
+.full__information__list {
+  list-style: url(../img/calc/list-item.svg);
+}
+
+.full__information__list__item {
+  margin-bottom: 11px;
+}
+
+.calculate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.calculate__item {
+  font-size: 14px;
+  font-weight: 700;
+  background: linear-gradient(92.71deg, #0499dd 0%, #17c1bc 100%);
+  padding: 12px 70px;
+  border-radius: 40px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.price__reset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 6px;
+  font-size: 12px;
+}
+
+.none {
+  display: none;
+}
+
+@media (max-width: 580px) {
+  .calc__cards {
+    justify-content: center;
+    column-gap: 40px;
+  }
+}

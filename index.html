@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calc</title>
+    <link rel="stylesheet" href="./css/calc.css" />
+  </head>
+  <body>
+    <div class="calc">
+      <div class="container">
+        <div class="box-center">
+          <div class="calc__content">
+            <div class="calc__title">
+              <h2>Калькулятор поездки</h2>
+            </div>
+            <div class="calc__cards">
+              <div class="calc__card">
+                <div class="calc__card__title">
+                  <h2>Место</h2>
+                  <button><img src="./img/calc/btn-close.svg" alt="" /></button>
+                </div>
+                <div class="calc__card__chekbox">
+                  <div class="cheakbox__item__btn place">
+                    <input
+                      type="radio"
+                      name="place__radio"
+                      class="calc__card__chekbox__item"
+                      id="place1"
+                    />
+                    <label
+                      for="place1"
+                      price="1000"
+                      children-price="700"
+                      full-info-data="price"
+                      >Кыргызстан</label
+                    >
+                  </div>
+                  <div class="cheakbox__item__btn place">
+                    <input
+                      type="radio"
+                      name="place__radio"
+                      class="calc__card__chekbox__item"
+                      id="place2"
+                    />
+                    <label
+                      for="place2"
+                      price="2000"
+                      children-price="1400"
+                      full-info-data="price"
+                      >Казахстан</label
+                    >
+                  </div>
+                  <div class="cheakbox__item__btn place">
+                    <input
+                      type="radio"
+                      name="place__radio"
+                      class="calc__card__chekbox__item"
+                      id="place3"
+                    />
+                    <label
+                      for="place3"
+                      price="3000"
+                      children-price="2100"
+                      full-info-data="price"
+                      >Узбекистан</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="calc__card">
+                <div class="calc__card__title">
+                  <h2>Длительность</h2>
+                  <button><img src="./img/calc/btn-close.svg" alt="" /></button>
+                </div>
+                <div class="calc__card__chekbox">
+                  <div class="calc__card__chekbox">
+                    <div class="cheakbox__item__btn duration">
+                      <input
+                        type="radio"
+                        name="duration"
+                        class="calc__card__chekbox__item"
+                        id="duration1"
+                      />
+                      <label
+                        for="duration1"
+                        duration="24"
+                        full-info-data="duration"
+                        >24 ч.</label
+                      >
+                    </div>
+                    <div class="cheakbox__item__btn duration">
+                      <input
+                        type="radio"
+                        name="duration"
+                        class="calc__card__chekbox__item"
+                        id="duration2"
+                      />
+                      <label
+                        for="duration2"
+                        duration="48"
+                        full-info-data="duration"
+                        >48 ч.</label
+                      >
+                    </div>
+                    <div class="cheakbox__item__btn duration">
+                      <input
+                        type="radio"
+                        name="duration"
+                        class="calc__card__chekbox__item"
+                        id="duration3"
+                      />
+                      <label
+                        for="duration3"
+                        duration="72"
+                        full-info-data="duration"
+                        >72 ч.</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="prise">
+                <ul class="price__info__list">
+                  <li class="price__info__item none">
+                    Стоимсоть за одного взрослого - <span></span> руб.
+                  </li>
+                </ul>
+              </div>
+              <div class="prise">
+                <ul class="price__info__list">
+                  <li class="price__info__item none">
+                    Стоимсоть за одного ребёнка - <span></span> руб.
+                  </li>
+                </ul>
+              </div>
+              <div class="calc__card">
+                <div class="calc__card__title">
+                  <h2>Количество взрослых</h2>
+                  <button><img src="./img/calc/btn-close.svg" alt="" /></button>
+                </div>
+                <div class="calc__card__human__count" id="human__count">
+                  <div class="human__count__btn__radio">
+                    <input
+                      type="radio"
+                      name="human__count"
+                      id="human__count__radio1"
+                      checked="true"
+                    />
+                    <label
+                      for="human__count__radio1"
+                      count="0"
+                      full-info-data="human__count"
+                      >0 чел.</label
+                    >
+                  </div>
+                  <div class="human__count__btn__radio">
+                    <input
+                      type="radio"
+                      name="human__count"
+                      id="human__count__radio2"
+                    />
+                    <label
+                      for="human__count__radio2"
+                      count="1"
+                      full-info-data="human__count"
+                      >1 чел.</label
+                    >
+                  </div>
+                  <div class="human__count__btn__radio">
+                    <input
+                      type="radio"
+                      name="human__count"
+                      id="human__count__radio3"
+                    />
+                    <label
+                      for="human__count__radio3"
+                      count="2"
+                      full-info-data="human__count"
+                      >2 чел.</label
+                    >
+                  </div>
+                  <div class="human__count__btn__radio">
+                    <input
+                      type="radio"
+                      name="human__count"
+                      id="human__count__radio4"
+                    />
+                    <label
+                      for="human__count__radio4"
+                      count="3"
+                      full-info-data="human__count"
+                      >3 чел.</label
+                    >
+                  </div>
+                  <div class="human__count__btn__radio">
+                    <input
+                      type="radio"
+                      name="human__count"
+                      id="human__count__radio5"
+                    />
+                    <label
+                      for="human__count__radio5"
+                      count="4"
+                      full-info-data="human__count"
+                      >4 чел.</label
+                    >
+                  </div>
+                  <div class="human__count__btn__radio">
+                    <input
+                      type="radio"
+                      name="human__count"
+                      id="human__count__radio6"
+                    />
+                    <label
+                      for="human__count__radio6"
+                      count="5"
+                      full-info-data="human__count"
+                      >5 чел.</label
+                    >
+                  </div>
+                  <div class="human__count__btn__radio">
+                    <input
+                      type="radio"
+                      name="human__count"
+                      id="human__count__radio7"
+                    />
+                    <label
+                      for="human__count__radio7"
+                      count="6"
+                      full-info-data="human__count"
+                      >6 чел.</label
+                    >
+                  </div>
+                  <div class="human__count__btn__radio">
+                    <input
+                      type="radio"
+                      name="human__count"
+                      id="human__count__radio8"
+                    />
+                    <label
+                      for="human__count__radio8"
+                      count="7"
+                      full-info-data="human__count"
+                      >7 чел.</label
+                    >
+                  </div>
+                  <div class="human__count__btn__radio">
+                    <input
+                      type="radio"
+                      name="human__count"
+                      id="human__count__radio9"
+                    />
+                    <label
+                      for="human__count__radio9"
+                      count="8"
+                      full-info-data="human__count"
+                      >8 чел.</label
+                    >
+                  </div>
+                  <div class="human__count__btn__radio">
+                    <input
+                      type="radio"
+                      name="human__count"
+                      id="human__count__radio10"
+                    />
+                    <label
+                      for="human__count__radio10"
+                      count="9"
+                      full-info-data="human__count"
+                      >9 чел.</label
+                    >
+                  </div>
+                  <div class="human__count__btn__radio11">
+                    <input
+                      type="radio"
+                      name="human__count"
+                      id="human__count__radio11"
+                    />
+                    <label for="human__count__radio11" class=""
+                      >Больше 10 чел.</label
+                    >
+                  </div>
+
+                  <div class="input-human none">
+                    <input type="number" class="inputCount" value="0" />чел.
+                  </div>
+                </div>
+              </div>
+
+              <div class="calc__card">
+                <div class="calc__card__title">
+                  <h2>Количество детей</h2>
+                  <button><img src="./img/calc/btn-close.svg" alt="" /></button>
+                </div>
+                <div class="calc__card__human__count" id="children__count">
+                  <div class="human__count__btn__radio">
+                    <input
+                      type="radio"
+                      name="children__count"
+                      id="children__count__radio1"
+                      checked="true"
+                    />
+                    <label
+                      for="children__count__radio1"
+                      count="0"
+                      full-info-data="children__count"
+                      >0 чел.</label
+                    >
+                  </div>
+                  <div class="human__count__btn__radio">
+                    <input
+                      type="radio"
+                      name="children__count"
+                      id="children__count__radio2"
+                    />
+                    <label
+                      for="children__count__radio2"
+                      count="1"
+                      full-info-data="children__count"
+                      >1 чел.</label
+                    >
+                  </div>
+                  <div class="human__count__btn__radio">
+                    <input
+                      type="radio"
+                      name="children__count"
+                      id="children__count__radio3"
+                    />
+                    <label
+                      for="children__count__radio3"
+                      count="2"
+                      full-info-data="children__count"
+                      >2 чел.</label
+                    >
+                  </div>
+                  <div class="human__count__btn__radio">
+                    <input
+                      type="radio"
+                      name="children__count"
+                      id="children__count__radio4"
+                    />
+                    <label
+                      for="children__count__radio4"
+                      count="3"
+                      full-info-data="children__count"
+                      >3 чел.</label
+                    >
+                  </div>
+                  <div class="human__count__btn__radio">
+                    <input
+                      type="radio"
+                      name="children__count"
+                      id="children__count__radio5"
+                    />
+                    <label
+                      for="children__count__radio5"
+                      count="4"
+                      full-info-data="children__count"
+                      >4 чел.</label
+                    >
+                  </div>
+                  <div class="human__count__btn__radio">
+                    <input
+                      type="radio"
+                      name="children__count"
+                      id="children__count__radio6"
+                    />
+                    <label
+                      for="children__count__radio6"
+                      count="5"
+                      full-info-data="children__count"
+                      >5 чел.</label
+                    >
+                  </div>
+                  <div class="human__count__btn__radio">
+                    <input
+                      type="radio"
+                      name="children__count"
+                      id="children__count__radio7"
+                    />
+                    <label
+                      for="children__count__radio7"
+                      count="6"
+                      full-info-data="children__count"
+                      >6 чел.</label
+                    >
+                  </div>
+                  <div class="human__count__btn__radio">
+                    <input
+                      type="radio"
+                      name="children__count"
+                      id="children__count__radio8"
+                    />
+                    <label
+                      for="children__count__radio8"
+                      count="7"
+                      full-info-data="children__count"
+                      >7 чел.</label
+                    >
+                  </div>
+                  <div class="human__count__btn__radio">
+                    <input
+                      type="radio"
+                      name="children__count"
+                      id="children__count__radio9"
+                    />
+                    <label
+                      for="children__count__radio9"
+                      count="8"
+                      full-info-data="children__count"
+                      >8 чел.</label
+                    >
+                  </div>
+                  <div class="human__count__btn__radio">
+                    <input
+                      type="radio"
+                      name="children__count"
+                      id="children__count__radio10"
+                    />
+                    <label
+                      for="children__count__radio10"
+                      count="9"
+                      full-info-data="children__count"
+                      >9 чел.</label
+                    >
+                  </div>
+                  <div class="human__count__btn__radio11">
+                    <input
+                      type="radio"
+                      name="children__count"
+                      id="children__count__radio11"
+                    />
+                    <label for="children__count__radio11" class=""
+                      >Больше 10 чел.</label
+                    >
+                  </div>
+
+                  <div class="input-human none">
+                    <input type="number" class="inputCount" value="0" />чел.
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="calc__card calc__card__total__price">
+                  <div class="calc__card__title">
+                    <h2>Стоимость поездки</h2>
+                  </div>
+                  <div class="total__price">
+                    <p>0</p>
+                  </div>
+                </div>
+
+                <div class="calculate">
+                  <button class="calculate__item">Рассчитать</button>
+                  <button class="price__reset">
+                    <img src="./img/calc/price-reset.svg" alt="price-reset" />
+                    Сбросить фильтры
+                  </button>
+                </div>
+              </div>
+
+              <div class="calc__card">
+                <div class="calc__card__title">
+                  <h2>Полная информация</h2>
+                </div>
+                <div class="full__information">
+                  <ul class="full__information__list">
+                    <li
+                      class="full__information__list__item"
+                      full-info-data="place"
+                    >
+                      Место : <span></span>
+                    </li>
+                    <li
+                      class="full__information__list__item"
+                      full-info-data="duration"
+                    >
+                      Длительность : <span>0</span> ч.
+                    </li>
+                    <li
+                      class="full__information__list__item"
+                      full-info-data="humanCount"
+                    >
+                      Количество взрослых : <span></span>
+                    </li>
+                    <li
+                      class="full__information__list__item"
+                      full-info-data="childrenCount"
+                    >
+                      Количество детей : <span></span>
+                    </li>
+                    <li
+                      class="full__information__list__item"
+                      full-info-data="totalPrice"
+                    >
+                      Стоимсоть поездки : <span>0</span> сом
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/calc.js"></script>
+  </body>
+</html>
